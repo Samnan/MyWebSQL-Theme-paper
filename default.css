@@ -454,14 +454,30 @@ div.padded {
 	padding: 10px;
 }
 
+/* codemirror specific settings */
 .CodeMirror-line-numbers {
-	background-color: #fdfbf2;
+	background-color: #fff;
 	color: #aaa;
 	font-family: courier new;
 	font-size: 10pt;
 	line-height: 1.2em;
 	padding: 4px 10px 4px 5px;
 }
+
+.CodeMirror-wrapping {
+	background-color: #fff;
+}
+
+.cm-s-default span {
+	font-family: courier new;
+	font-size: 10pt;
+	line-height: 1.2em;
+}
+
+.CodeMirror-gutter-text {
+	line-height: 1.5em;
+}
+/*****************************/
 
 a.btn {
 	color: green;
@@ -545,6 +561,21 @@ div#messages-div,div#info-div {
 	right: 0;
 	text-align: left;
 	top: 24px;
+}
+
+#object-filter {
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+}
+
+#object-filter-text {
+	font-size: 11px;
+	height: 14px;
+	padding: 1px 3px;
+	width: 97%;
 }
 
 div#popup_wrapper {
@@ -723,10 +754,6 @@ body {
 	font-weight: 700;
 }
 
-.CodeMirror-wrapping {
-	background-color: #fdfbf2;
-}
-
 div#popup_contents .ui-widget-content {
 	border: none;
 }
@@ -749,6 +776,10 @@ pre.blob {
 textarea.blobeditor {
 	font-family: verdana;
 	font-size: 9pt;
+}
+
+input.blur {
+	color: #777777;
 }
 
 div#rec_pager div.numrec {
